@@ -1,0 +1,301 @@
+.app-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+.header nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header a,
+.back-link {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.header a {
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.header a:hover,
+.back-link:hover {
+  color: #0f172a;
+  border-color: #93c5fd;
+}
+
+.logout-btn {
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #f4f4f5;
+}
+
+.main-content h2 {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.prompt-card,
+.detail-card,
+.form-card {
+  background: #ffffff;
+  border: 1px solid #d4d4d8;
+  border-radius: 2px;
+  padding: 16px;
+  box-shadow: 0 10px 18px -18px rgba(15, 23, 42, 0.35);
+}
+
+.prompt-card {
+  text-decoration: none;
+  color: #111827;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prompt-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.prompt-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+}
+
+.prompt-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.prompt-link p,
+.prompt-link small {
+  display: block;
+  margin-top: 7px;
+}
+
+.owner-row {
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.inline-icon {
+  margin-right: 6px;
+}
+
+.complexity-badge {
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+
+.complexity-low {
+  color: #15803d;
+}
+
+.complexity-medium {
+  color: #c2410c;
+}
+
+.complexity-high {
+  color: #b91c1c;
+}
+
+.detail-content {
+  margin: 14px 0 16px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 640px;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card button {
+  font: inherit;
+  padding: 10px 11px;
+  border-radius: 2px;
+  border: 1px solid #cbd5e1;
+}
+
+.form-card button {
+  margin-top: 4px;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form-card button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  border: 1px solid #ef4444;
+  border-radius: 2px;
+  background: #fff;
+  color: #b91c1c;
+  font: inherit;
+  font-weight: 600;
+  padding: 7px 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.delete-btn:hover {
+  background: #fef2f2;
+}
+
+.form-card input:focus,
+.form-card textarea:focus,
+.form-card button:focus,
+.logout-btn:focus,
+.delete-btn:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 1px;
+}
+
+.state {
+  color: #64748b;
+  border: 1px dashed #cbd5e1;
+  border-radius: 2px;
+  padding: 10px;
+  background: #f8fafc;
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  padding: 6px 10px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.detail-actions {
+  margin-top: 14px;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.login-card {
+  max-width: 100%;
+}
+
+.login-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.login-toggle button {
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background: #fff;
+  color: #1e293b;
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.login-toggle button.active-toggle {
+  border-color: #1d4ed8;
+  color: #1e3a8a;
+  background: #eff6ff;
+}
+
+.test-credentials-card {
+  background: linear-gradient(180deg, #f8fafc, #eff6ff);
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  padding: 16px;
+}
+
+.test-credentials-card h3 {
+  margin: 0 0 12px;
+}
+
+.test-credentials-card p {
+  margin: 6px 0;
+}
+
+.success-message {
+  color: #166534;
+  font-weight: 600;
+}
+
+.hint-text {
+  margin-top: 10px;
+  color: #334155;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 16px 12px 30px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
